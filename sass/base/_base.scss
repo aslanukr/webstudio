@@ -1,0 +1,28 @@
+body {
+  background-color: #ffffff;
+  color: #757575;
+
+  font-family: "Roboto", Verdana, sans-serif;
+  letter-spacing: 0.03em;
+}
+
+.card-set {
+  display: flex;
+  flex-wrap: wrap;
+  gap: $indent;
+}
+
+@mixin card-set__item($items) {
+  flex-basis: calc((100% - #{$indent} * (#{$items} - 1)) / (#{$items}));
+}
+
+.section__title {
+  color: $title-text-color;
+
+  margin-bottom: 50px;
+
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+}

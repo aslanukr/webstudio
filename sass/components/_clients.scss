@@ -1,0 +1,30 @@
+.clients__icon {
+  fill: $socials-link-color;
+
+  transition: fill 250ms $timing-function;
+}
+
+.clients__link {
+  @include card-set__item(6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  min-width: 170px;
+  height: 92px;
+
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+
+  transition: border 250ms $timing-function;
+
+  &:hover,
+  &:focus {
+    color: $accent-color;
+    border: 1px solid $accent-color;
+
+    .clients__icon {
+      fill: $accent-color;
+    }
+  }
+}

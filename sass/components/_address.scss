@@ -1,0 +1,33 @@
+.address-wrapper {
+  margin-right: 70px;
+}
+
+.address {
+  font-style: normal;
+}
+
+.address__postal {
+  display: inline-block;
+  margin-bottom: 9px;
+
+  color: $primary-white-color;
+  font-size: 14px;
+  line-height: 1.71;
+}
+
+.address__contacts:first-of-type {
+  margin-bottom: 9px;
+}
+
+.address__link {
+  color: $footer-contacts-color;
+  font-size: 14px;
+  line-height: 1.71;
+
+  transition: color 250ms $timing-function;
+
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
+}

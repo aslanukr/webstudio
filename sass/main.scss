@@ -1,0 +1,31 @@
+@import "./utils/normalize";
+@import "./utils/variables";
+@import "./utils/visually-hidden";
+@import "./utils/is-hidden";
+
+@import "./base/reset";
+@import "./base/base";
+
+@import "./components/section";
+@import "./components/container";
+@import "./components/header";
+@import "./components/logo";
+@import "./components/nav";
+@import "./components/contacts";
+@import "./components/hero";
+@import "./components/button";
+@import "./components/values";
+@import "./components/activities";
+@import "./components/team-cards";
+@import "./components/socials";
+@import "./components/clients";
+@import "./components/footer";
+@import "./components/address";
+@import "./components/subscribe-form";
+@import "./components/backdrop";
+@import "./components/modal";
+@import "./components/modal-form";
+@import "./components/custom-checkbox";
+@import "./components/filters-btn";
+@import "./components/portfolio-cards";
+@import "./components/overlay";

@@ -1,0 +1,40 @@
+.projects {
+  background-color: $primary-white-color;
+}
+
+.projects__item {
+  @include card-set__item(3);
+  box-shadow: none;
+  transition: box-shadow 250ms $timing-function;
+
+  &:hover,
+  &:focus {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+      1px 4px 6px rgba(0, 0, 0, 0.16);
+  }
+}
+
+.project-wrapper {
+  padding: 20px 24px;
+  border: 1px solid #eeeeee;
+  border-top: none;
+}
+
+.projects__title {
+  color: $title-text-color;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+
+.projects__description {
+  color: $primary-text-color;
+  font-size: 16px;
+  line-height: 1.87;
+}
+
+.projects__thumb {
+  position: relative;
+  overflow: hidden;
+}

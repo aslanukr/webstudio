@@ -1,0 +1,17 @@
+.uncheck {
+  opacity: 1;
+  transition: opacity 250ms $timing-function;
+}
+
+.modal_form__checkbox:checked + .check-icon .uncheck {
+  opacity: 0;
+}
+
+.check {
+  opacity: 0;
+  transition: opacity 250ms $timing-function;
+}
+
+.modal_form__checkbox:checked + .check-icon .check {
+  opacity: 1;
+}

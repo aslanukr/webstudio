@@ -1,0 +1,32 @@
+.values__item {
+  @include card-set__item(4);
+}
+
+.values__thumb {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 270px;
+  height: 120px;
+  margin-bottom: 30px;
+
+  background-color: $secondary-bg-color;
+  border-radius: 4px;
+}
+
+.values__title {
+  color: $title-text-color;
+  margin-bottom: 10px;
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+}
+
+.values__text {
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
