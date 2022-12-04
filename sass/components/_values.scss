@@ -1,5 +1,11 @@
 .values__item {
-  @include card-set__item(4);
+  @media screen and (min-width: 768px) {
+    @include card-set__item(2);
+  }
+
+  @media screen and (min-width: 1200px) {
+    @include card-set__item(4);
+  }
 }
 
 .values__thumb {
@@ -7,22 +13,40 @@
   align-items: center;
   justify-content: center;
 
-  width: 270px;
-  height: 120px;
   margin-bottom: 30px;
 
   background-color: $secondary-bg-color;
   border-radius: 4px;
+
+  @media screen and (min-width: 480px) {
+    width: 450px;
+    height: 120px;
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 354px;
+    height: 120px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 270px;
+    height: 120px;
+  }
 }
 
 .values__title {
   color: $title-text-color;
+
   margin-bottom: 10px;
 
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
+
+  @media screen and (min-width: 480px) and (max-width: 767px) {
+    text-align: center;
+  }
 }
 
 .values__text {
