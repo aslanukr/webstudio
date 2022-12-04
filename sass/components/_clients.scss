@@ -4,19 +4,34 @@
   transition: fill 250ms $timing-function;
 }
 
+.clients.card-set {
+  @media screen and (min-width: 0px) and (max-width: 479px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
 .clients__link {
-  @include card-set__item(2);
   display: flex;
   justify-content: center;
   align-items: center;
 
   width: 210px;
   height: 92px;
-
   border: 1px solid #afb1b8;
   border-radius: 4px;
 
   transition: border 250ms $timing-function;
+
+  @media screen and (min-width: 480px) {
+    @include card-set__item(2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 210px;
+  }
 
   @media screen and (min-width: 768px) {
     @include card-set__item(3);

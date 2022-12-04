@@ -5,13 +5,22 @@
 }
 
 .footer__container {
-  display: flex;
-  align-items: baseline;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    justify-content: space-around;
+  }
+
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    align-items: baseline;
+  }
 }
 
 .footer__logo {
   display: inline-block;
-  margin-bottom: 20px;
+  margin-bottom: 28px;
 }
 
 .footer__text {
@@ -23,4 +32,8 @@
   text-transform: uppercase;
 
   color: $primary-white-color;
+
+  @media screen and (max-width: 1199px) {
+    text-align: center;
+  }
 }
