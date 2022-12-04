@@ -637,15 +637,11 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  width: 450px;
+  height: 120px;
   margin-bottom: 30px;
   background-color: #f5f4fa;
   border-radius: 4px;
-}
-@media screen and (min-width: 480px) {
-  .values__thumb {
-    width: 450px;
-    height: 120px;
-  }
 }
 @media screen and (min-width: 768px) {
   .values__thumb {
@@ -668,7 +664,7 @@ body {
   line-height: 1.14;
   text-transform: uppercase;
 }
-@media screen and (min-width: 480px) and (max-width: 767px) {
+@media screen and (max-width: 767px) {
   .values__title {
     text-align: center;
   }
