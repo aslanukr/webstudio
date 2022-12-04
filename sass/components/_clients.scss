@@ -5,18 +5,28 @@
 }
 
 .clients__link {
-  @include card-set__item(6);
+  @include card-set__item(2);
   display: flex;
   justify-content: center;
   align-items: center;
 
-  min-width: 170px;
+  width: 210px;
   height: 92px;
 
   border: 1px solid #afb1b8;
   border-radius: 4px;
 
   transition: border 250ms $timing-function;
+
+  @media screen and (min-width: 768px) {
+    @include card-set__item(3);
+    width: 226px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    @include card-set__item(6);
+    width: 170px;
+  }
 
   &:hover,
   &:focus {
