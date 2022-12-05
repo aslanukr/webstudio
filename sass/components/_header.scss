@@ -1,5 +1,9 @@
 .header {
   border-bottom: 1px solid #ececec;
+
+  @media screen and (max-width: 767px) {
+    padding: 16px 0;
+  }
 }
 
 .header__container {

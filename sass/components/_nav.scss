@@ -4,9 +4,13 @@
 }
 
 .nav__list {
-  display: flex;
-  align-items: center;
-  gap: 50px;
+  display: none;
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+  }
 }
 
 .nav__link {
