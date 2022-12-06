@@ -13,7 +13,7 @@ body {
 }
 
 @mixin card-set__item($items) {
-  flex-basis: calc((100% - #{$indent} * (#{$items} - 1)) / (#{$items}));
+  width: calc((100% - #{$indent} * (#{$items} - 1)) / (#{$items}));
 }
 
 .section__title {

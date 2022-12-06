@@ -3,7 +3,19 @@
 }
 
 .projects__item {
-  @include card-set__item(3);
+  @include card-set__item(1);
+
+  @media screen and (min-width: 768px) {
+    @include card-set__item(2);
+  }
+
+  @media screen and (min-width: 1200px) {
+    @include card-set__item(3);
+  }
+}
+
+.projects__link {
+  display: block;
   box-shadow: none;
   transition: box-shadow 250ms $timing-function;
 
@@ -18,6 +30,14 @@
   padding: 20px 24px;
   border: 1px solid #eeeeee;
   border-top: none;
+
+  @media screen and (min-width: 768px) {
+    min-height: 146px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    min-height: 110px;
+  }
 }
 
 .projects__title {

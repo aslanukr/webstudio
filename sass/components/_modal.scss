@@ -4,8 +4,6 @@
   left: 50%;
   z-index: 100;
 
-  width: 528px;
-  height: 581px;
   padding: 40px 40px;
 
   background-color: $primary-white-color;
@@ -60,9 +58,14 @@
 
   font-weight: 700;
   font-size: 20px;
-  line-height: 1.15;
+  line-height: 1.5;
   text-align: center;
   color: $title-text-color;
 
   user-select: none;
+
+  @media screen and (min-width: 1200px) {
+    font-size: 20px;
+    line-height: 1.15;
+  }
 }

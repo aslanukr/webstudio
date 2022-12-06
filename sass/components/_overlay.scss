@@ -14,7 +14,7 @@
   transition: transform 250ms $timing-function;
 }
 
-.projects__item:hover .overlay {
+.projects__link:hover .overlay {
   transform: translateY(0);
 }
 
