@@ -152,7 +152,11 @@
             <li class="activity__item card-set__item">
               <div class="activity__thumb">
                 <img
-                  src="./images/computer.jpg"
+                  srcset="
+                    ./images/activities/img-1@1x.jpg 1x,
+                    ./images/activities/img-1@2x.jpg 2x
+                  "
+                  src="./images/activities/img-1@1x.jpg"
                   alt="руки набирають текст на клавіатурі"
                   width="370" />
                 <div class="activity__textbox">
@@ -163,7 +167,11 @@
             <li class="activity__item card-set__item">
               <div class="activity__thumb">
                 <img
-                  src="./images/smartphone.jpg"
+                  srcset="
+                    ./images/activities/img-2@1x.jpg 1x,
+                    ./images/activities/img-2@2x.jpg 2x
+                  "
+                  src="./images/activities/img-2@1x.jpg"
                   alt="жінка тримає в руках смартфон під час роботи за комп'ютером"
                   width="370" />
                 <div class="activity__textbox">
@@ -174,7 +182,11 @@
             <li class="activity__item card-set__item">
               <div class="activity__thumb">
                 <img
-                  src="./images/tablet.jpg"
+                  srcset="
+                    ./images/activities/img-3@1x.jpg 1x,
+                    ./images/activities/img-3@2x.jpg 2x
+                  "
+                  src="./images/activities/img-3@1x.jpg"
                   alt="планшет у руках"
                   width="370" />
                 <div class="activity__textbox">
@@ -195,9 +207,57 @@
 
           <ul class="team card-set">
             <li class="card-set__item team__card">
-              <img
-                src="./images/product-designer-photo.jpg"
-                alt="Ігор Дем'яненко Product Designer" />
+              <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/team/img-1_l_270@1x.webp 1x,
+                    ./images/team/img-1_l_540@2x.webp 2x
+                  "
+                  type="image/webp" />
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/team/img-1_l_270@1x.jpg 1x,
+                    ./images/team/img-1_l_540@2x.jpg 2x
+                  "
+                  type="image/jpg" />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/team/img-1_m_354@1x.webp 1x,
+                    ./images/team/img-1_m_708@2x.webp 2x
+                  "
+                  type="image/webp" />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/team/img-1_m_354@1x.jpg 1x,
+                    ./images/team/img-1_m_708@2x.jpg 2x
+                  "
+                  type="image/jpg" />
+                <source
+                  media="(min-width: 480px)"
+                  srcset="
+                    ./images/team/img-1_s_450@1x.webp 1x,
+                    ./images/team/img-1_s_900@2x.webp 2x
+                  "
+                  type="image/webp" />
+                <source
+                  media="(min-width: 480px)"
+                  srcset="
+                    ./images/team/img-1_s_450@1x.jpg 1x,
+                    ./images/team/img-1_s_900@2x.jpg 2x
+                  "
+                  type="image/jpg" />
+                <img
+                  src="./images/team/img-1_s_450@1x.jpg"
+                  alt="Ігор Дем'яненко Product Designer"
+                  width="450"
+                  height="460"
+                  loading="lazy"
+              /></picture>
+
               <div class="team__wrapper">
                 <h3 class="team__member">Ігор Дем'яненко</h3>
                 <p class="team__position" lang="en">Product Designer</p>
@@ -254,9 +314,57 @@
               </div>
             </li>
             <li class="card-set__item team__card">
-              <img
-                src="./images/frontenddev-photo.jpg"
-                alt="Ольга Рєпіна Frontend Developer" />
+              <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/team/img-2_l_270@1x.webp 1x,
+                    ./images/team/img-2_l_540@2x.webp 2x
+                  "
+                  type="image/webp" />
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/team/img-2_l_270@1x.jpg 1x,
+                    ./images/team/img-2_l_540@2x.jpg 2x
+                  "
+                  type="image/jpg" />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/team/img-2_m_354@1x.webp 1x,
+                    ./images/team/img-2_m_708@2x.webp 2x
+                  "
+                  type="image/webp" />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/team/img-2_m_354@1x.jpg 1x,
+                    ./images/team/img-2_m_708@2x.jpg 2x
+                  "
+                  type="image/jpg" />
+                <source
+                  media="(min-width: 480px)"
+                  srcset="
+                    ./images/team/img-2_s_450@1x.webp 1x,
+                    ./images/team/img-2_s_900@2x.webp 2x
+                  "
+                  type="image/webp" />
+                <source
+                  media="(min-width: 480px)"
+                  srcset="
+                    ./images/team/img-2_s_450@1x.jpg 1x,
+                    ./images/team/img-2_s_900@2x.jpg 2x
+                  "
+                  type="image/jpg" />
+                <img
+                  src="./images/team/img-2_s_450@1x.jpg"
+                  alt="Ольга Рєпіна Frontend Developer"
+                  width="450"
+                  height="460"
+                  loading="lazy" />
+              </picture>
+
               <div class="team__wrapper">
                 <h3 class="team__member">Ольга Рєпіна</h3>
                 <p class="team__position" lang="en">Frontend Developer</p>
@@ -313,9 +421,58 @@
               </div>
             </li>
             <li class="card-set__item team__card">
-              <img
-                src="./images/marketing-photo.jpg"
-                alt="Микола Тарасов Marketing" />
+              <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/team/img-3_l_270@1x.webp 1x,
+                    ./images/team/img-3_l_540@2x.webp 2x
+                  "
+                  type="image/webp" />
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/team/img-3_l_270@1x.jpg 1x,
+                    ./images/team/img-3_l_540@2x.jpg 2x
+                  "
+                  type="image/jpg" />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/team/img-3_m_354@1x.webp 1x,
+                    ./images/team/img-3_m_708@2x.webp 2x
+                  "
+                  type="image/webp" />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/team/img-3_m_354@1x.jpg 1x,
+                    ./images/team/img-3_m_708@2x.jpg 2x
+                  "
+                  type="image/jpg" />
+                <source
+                  media="(min-width: 480px)"
+                  srcset="
+                    ./images/team/img-3_s_450@1x.webp 1x,
+                    ./images/team/img-3_s_900@2x.webp 2x
+                  "
+                  type="image/webp" />
+                <source
+                  media="(min-width: 480px)"
+                  srcset="
+                    ./images/team/img-3_s_450@1x.jpg 1x,
+                    ./images/team/img-3_s_900@2x.jpg 2x
+                  "
+                  type="image/jpg" />
+
+                <img
+                  src="./images/team/img-3_s_450@1x.jpg"
+                  alt="Микола Тарасов Marketing"
+                  width="450"
+                  height="460"
+                  loading="lazy"
+              /></picture>
+
               <div class="team__wrapper">
                 <h3 class="team__member">Микола Тарасов</h3>
                 <p class="team__position" lang="en">Marketing</p>
@@ -372,9 +529,57 @@
               </div>
             </li>
             <li class="card-set__item team__card">
-              <img
-                src="./images/uidesigner-photo.jpg"
-                alt="Михайло Єрмаков UI Designer" />
+              <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/team/img-4_l_270@1x.webp 1x,
+                    ./images/team/img-4_l_540@2x.webp 2x
+                  "
+                  type="image/webp" />
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/team/img-4_l_270@1x.jpg 1x,
+                    ./images/team/img-4_l_540@2x.jpg 2x
+                  "
+                  type="image/jpg" />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/team/img-4_m_354@1x.webp 1x,
+                    ./images/team/img-4_m_708@2x.webp 2x
+                  "
+                  type="image/webp" />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/team/img-4_m_354@1x.jpg 1x,
+                    ./images/team/img-4_m_708@2x.jpg 2x
+                  "
+                  type="image/jpg" />
+                <source
+                  media="(min-width: 480px)"
+                  srcset="
+                    ./images/team/img-4_s_450@1x.webp 1x,
+                    ./images/team/img-4_s_900@2x.webp 2x
+                  "
+                  type="image/webp" />
+                <source
+                  media="(min-width: 480px)"
+                  srcset="
+                    ./images/team/img-4_s_450@1x.jpg 1x,
+                    ./images/team/img-4_s_900@2x.jpg 2x
+                  "
+                  type="image/jpg" />
+                <img
+                  src="./images/team/img-4_s_450@1x.jpg"
+                  alt="Михайло Єрмаков UI Designer"
+                  width="450"
+                  height="460"
+                  loading="lazy" />
+              </picture>
+
               <div class="team__wrapper">
                 <h3 class="team__member">Михайло Єрмаков</h3>
                 <p class="team__position" lang="en">UI Designer</p>
