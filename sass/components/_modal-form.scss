@@ -97,11 +97,16 @@
   gap: 3px;
 
   font-weight: 400;
-  font-size: 6px;
+  font-size: 7px;
   line-height: 1.16;
   color: $primary-text-color;
 
   user-select: none;
+
+  @media screen and (min-width: 350px) {
+    font-size: 9px;
+    line-height: 1.71;
+  }
 
   @media screen and (min-width: 479px) {
     font-size: 10px;
