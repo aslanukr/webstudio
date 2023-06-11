@@ -3,8 +3,8 @@
   top: 50%;
   left: 50%;
   z-index: 100;
-
-  padding: 40px 40px;
+  overflow-y: auto;
+  padding: 20px 20px;
 
   background-color: $primary-white-color;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
@@ -15,10 +15,18 @@
   transform: translate(-50%, -50%) scale(1);
   transition: transform 250ms $timing-function, opacity 250ms $timing-function;
 
-  @media screen and (max-width: 479px) {
-    width: 100vw;
-    height: 100vh;
+  @media screen and (min-width: 768px) {
     padding: 30px 30px;
+  }
+
+  @media screen and (min-width: 479px) {
+    width: 450px;
+    padding: 30px 30px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 528px;
+    padding: 40px 40px;
   }
 }
 
@@ -34,11 +42,11 @@
 
 .modal__btn {
   position: absolute;
-  top: 8px;
-  right: 8px;
+  top: 7px;
+  right: 7px;
 
-  width: 30px;
-  height: 30px;
+  width: 25px;
+  height: 25px;
   padding: 0;
 
   display: inline-flex;
@@ -55,11 +63,6 @@
   &:focus .modal__icon {
     fill: $accent-color;
   }
-
-  @media screen and (max-width: 479px) {
-    top: 8px;
-    right: 30px;
-  }
 }
 
 .modal__text {
@@ -68,12 +71,17 @@
   margin-bottom: 12px;
 
   font-weight: 700;
-  font-size: 20px;
+  font-size: 12px;
   line-height: 1.5;
   text-align: center;
   color: $title-text-color;
 
   user-select: none;
+
+  @media screen and (min-width: 768px) {
+    font-size: 18px;
+    line-height: 1.15;
+  }
 
   @media screen and (min-width: 1200px) {
     font-size: 20px;
