@@ -29,7 +29,7 @@
   left: 0;
   display: flex;
   flex-direction: column;
-
+  padding: 25px;
   width: 100vw;
   height: 100vh;
   padding: 48px;
@@ -39,6 +39,10 @@
   transform: translateX(100%);
   opacity: 0;
   transition: transform 250ms ease-in-out, opacity 250ms $timing-function;
+
+  @media screen and (min-width: 479px) {
+    padding: 48px;
+  }
 
   &.is-open {
     transform: translateX(0);
@@ -75,7 +79,7 @@
     color: $accent-color;
   }
 
-  @media screen and (max-width: 380px) {
+  @media screen and (max-width: 320px) {
     font-size: 20px;
   }
 }
@@ -90,7 +94,7 @@
     margin-bottom: 64px;
   }
 
-  @media screen and (max-width: 380px) {
+  @media screen and (max-width: 320px) {
     &:not(:last-child) {
       margin-bottom: 20px;
     }
@@ -106,7 +110,7 @@
 
   color: $accent-color;
 
-  @media screen and (max-width: 380px) {
+  @media screen and (max-width: 400px) {
     font-size: 20px;
   }
 }
@@ -120,8 +124,8 @@
 
   color: $primary-text-color;
 
-  @media screen and (max-width: 380px) {
-    font-size: 15px;
+  @media screen and (max-width: 400px) {
+    font-size: 20px;
   }
 }
 
@@ -139,14 +143,14 @@
 .mobile-socials__link {
   font-family: "Roboto";
   font-weight: 500;
-  font-size: 18px;
+  font-size: 10px;
   line-height: 1.22;
   letter-spacing: 0.02em;
 
   color: $accent-color;
 
-  @media screen and (max-width: 380px) {
-    font-size: 15px;
+  @media screen and (min-width: 479px) {
+    font-size: 18px;
   }
 }
 
